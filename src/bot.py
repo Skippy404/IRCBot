@@ -13,7 +13,12 @@ def startUp(serverIP, serverPort, channelList):
 
     server.join("#club45")
     server.notice("bruh", "#club45")
+    server.topic("This is test topic", "#club45")
+    server.privmsg("deavmi", "welcome to the krustykrab")
+    server.privmsg("ohmyskippy", "welcome to the krustykrab")
 
+    print(server.send_raw("list"))
+    
     while True: pass
     
     pass
