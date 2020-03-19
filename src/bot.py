@@ -9,8 +9,13 @@ def startUp(serverIP, serverPort, channelList):
     server = client.server()
 
     # Connect to serverIP and serverPort (TODO: Loop through channel list)
-    server.connect(serverIP, serverPort, "#club45")
+    server.connect(serverIP, serverPort, "EMANCIPATED BRUH")
+
+    server.join("#club45")
+    server.notice("bruh poes", "#club45")
+
+    while True: pass
     
     pass
 
-startUp()
+startUp("irc.freenode.net", 6667, "#club45")
