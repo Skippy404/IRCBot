@@ -9,15 +9,13 @@ def startUp(serverIP, serverPort, channelList):
     server = client.server()
 
     # Connect to serverIP and serverPort (TODO: Loop through channel list)
-    server.connect(serverIP, serverPort, "EMANCIPATED BRUH")
+    server.connect(serverIP, serverPort, "EMANCIPATED")
 
     server.join("#club45")
     server.notice("bruh", "#club45")
     server.topic("This is test topic", "#club45")
     server.privmsg("deavmi", "welcome to the krustykrab")
     server.privmsg("ohmyskippy", "welcome to the krustykrab")
-
-    print(server.send_raw("list"))
     
     while True: pass
     
