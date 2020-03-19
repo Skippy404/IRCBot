@@ -20,7 +20,7 @@ def startUp(serverIP, serverPort, channelList):
     server.join("#club45")
     server.notice("bruh", "#club45")
     dprint("Joined server")
-    server.topic("This is test topic", "#club45")
+    server.topic("#club45", "PussyGang")
     server.privmsg("deavmi", "welcome to the krustykrab 1")
     server.privmsg("deavmi", "welcome to the krustykrab 2")
     server.privmsg("ohmyskippy", "welcome to the krustykrab 1")
