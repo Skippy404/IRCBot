@@ -12,7 +12,7 @@ def startUp(serverIP, serverPort, channelList):
     dprint("botname = " + bot_name)
 
     # Create a server connection
-    server = client.server()
+    globals()['server'] = client.server()
 
     # Connect to serverIP and serverPort (TODO: Loop through channel list)
     server.connect(serverIP, serverPort, bot_name)
@@ -21,12 +21,17 @@ def startUp(serverIP, serverPort, channelList):
     server.notice("bruh", "#club45")
     dprint("Joined server")
     server.topic("This is test topic", "#club45")
-    server.privmsg("deavmi", "welcome to the krustykrab")
-    server.privmsg("ohmyskippy", "welcome to the krustykrab")
-    server.privmsg("#club45","welcome to the krustykrab")
-    
-    while True: pass
-    
-    pass
+
+def smsg(who, msg):
+    dprint("\nSending: " + who + "\nMessage: " + msg)
+    server.privmsg(who,msg)
 
 startUp("irc.freenode.net", 6667, "#club45")
+
+smsg("deavmi", "welcome to the krustykrab");
+smsg("ohmyskippy", "welcome to the krustykrab");
+smsg("#club45", "welcome to the krustykrab");
+
+while True: pass
+
+pass
