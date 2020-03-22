@@ -12,7 +12,7 @@ def startUp(serverIP, serverPort, channelList):
     server.connect(serverIP, serverPort, "EMANCIPATED BRUH")
 
     server.join("#club45")
-    server.notice("bruh poes", "#club45")
+    server.notice("bruh", "#club45")
 
     while True: pass
     
