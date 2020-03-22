@@ -9,6 +9,4 @@ fi
 
 echo -e "${BLUE}RUNNING BOT${NC}"
 
-pip3 install --user irc
-
 python3 ./src/bot.py
