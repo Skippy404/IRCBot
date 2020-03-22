@@ -21,10 +21,9 @@ def startUp(serverIP, serverPort, channelList):
     server.notice("bruh", "#club45")
     dprint("Joined server")
     server.topic("This is test topic", "#club45")
-    server.privmsg("deavmi", "welcome to the krustykrab 1")
-    server.privmsg("deavmi", "welcome to the krustykrab 2")
-    server.privmsg("ohmyskippy", "welcome to the krustykrab 1")
-    server.privmsg("ohmyskippy", "welcome to the krustykrab 2")
+    server.privmsg("deavmi", "welcome to the krustykrab")
+    server.privmsg("ohmyskippy", "welcome to the krustykrab")
+    server.privmsg("#club45","welcome to the krustykrab")
     
     while True: pass
     
